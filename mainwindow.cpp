@@ -66,7 +66,6 @@ void MainWindow::on_pushButton_clicked(){
 }
 
 void MainWindow::openFile() {
-    // Открытие диалога выбора файла
     QString filePath = QFileDialog::getOpenFileName(this, "Открыть файл", "", "Текстовые файлы (*.txt);;Все файлы (*)");
 
     if (!filePath.isEmpty()) {
@@ -93,7 +92,6 @@ void MainWindow::openFile() {
 }
 
 void MainWindow::saveFile() {
-    // Открытие диалога сохранения файла
     QString filePath = QFileDialog::getSaveFileName(this, "Сохранить файл", "", "Текстовые файлы (*.txt);;Все файлы (*)");
 
     if (!filePath.isEmpty()) {
