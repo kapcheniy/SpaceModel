@@ -1,0 +1,15 @@
+sun
+0
+0
+planet
+80
+0
+planet
+120
+0
+planet
+140
+0
+planet
+170
+0
