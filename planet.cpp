@@ -9,12 +9,10 @@ void Planet::mousePressEvent(QGraphicsSceneMouseEvent *event) {
 }
 
 void Planet::mouseMoveEvent(QGraphicsSceneMouseEvent *event)  {
-    // Получаем текущую позицию мыши
     QPointF mousePos = event->scenePos();
 
     x = mousePos.x() * 10e8;
     y = mousePos.y() * 10e8;
-    // Передаем управление стандартному обработчику
     QGraphicsEllipseItem::mouseMoveEvent(event);
 }
 
